@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Displays listening ports. Includes listening sockets
-# + as the PID and name of the program to which each socket belongs.
+# Command to display TCP and UDP ports
 
-netstat -l --program
+netstat -lp
