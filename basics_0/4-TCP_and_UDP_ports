@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # Command to display TCP and UDP ports
 
-netstat -lp
+# Display all listening TCP and UDP sockets with PID and program name
+sudo netstat -tunlp | grep LISTEN
+
+# Display all listening UNIX domain sockets with PID and program name
+sudo netstat -lxp | grep LISTEN
